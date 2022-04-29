@@ -1,7 +1,7 @@
-# Learn Terraform - Lambda functions and API Gateway
+# Moved
 
-AWS Lambda functions and API gateway are often used to create serverlesss
-applications.
+## Super pointless
 
-Follow along with this [tutorial on HashiCorp
-Learn](https://learn.hashicorp.com/tutorials/terraform/lambda-api-gateway?in=terraform/aws).
+Create a lambda function and DynamoDB table
+Each time the lambda function is run it will move the location of an image
+DynamoDB stores the trail of movements so any caller can be (eventually) redirected to it
