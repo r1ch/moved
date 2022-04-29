@@ -20,10 +20,10 @@ DynamoDB stores the trail of movements and visits to each link page.
 ## Installation
 
 Grab the repo
-
+```
 terraform plan
 terraform apply
-
+```
 ## Lambda function code
 
 Look in /function
