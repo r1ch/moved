@@ -2,13 +2,19 @@
 
 ## Super pointless
 
-Creates a lambda function and DynamoDB table
+Creates an  AWS Lambda Function and DynamoDB Table
 
-Lambda serves and HTML page via an API G/W
+A "last page" exists at the location `/hello`
 
-Each time the lambda function is called it will move the location of the image
+Lambda serves the page via an API G/W (full HTML is embedded in the Lambda)
 
-DynamoDB stores the trail of movements so any caller can be (eventually) redirected to it
+When the "last page" is visited, the location of the "last page" is moved to a new `/{uuid-v4}`, this is stored in the DB.
+
+The previous "last page" is now a "link page"
+
+A linked list of "link pages" grows, with the "last page" moving each time it is found
+
+DynamoDB stores the trail of movements and visits to each link page.
 
 
 ## Installation
